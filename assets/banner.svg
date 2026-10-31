@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="100%" height="340" style="background:#0b0f19;border-radius:14px;overflow:hidden;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e1a" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#070a13" />
+    </linearGradient>
+
+    <!-- Glowing Accent Gradients -->
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="rgba(30, 41, 59, 0.75)" />
+      <stop offset="100%" stop-color="rgba(15, 23, 42, 0.85)" />
+    </linearGradient>
+
+    <linearGradient id="greenPulse" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+
+    <!-- Grid Filter -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255, 255, 255, 0.035)" stroke-width="1" />
+    </pattern>
+
+    <style>
+      .glow-orbit {
+        animation: rotateGlow 18s linear infinite;
+        transform-origin: 600px 170px;
+      }
+      .wave-flow {
+        animation: waveFlow 10s ease-in-out infinite alternate;
+      }
+      .node-pulse-1 {
+        animation: pulseScale 3s ease-in-out infinite;
+        transform-origin: 220px 270px;
+      }
+      .node-pulse-2 {
+        animation: pulseScale 3s ease-in-out infinite 1.5s;
+        transform-origin: 980px 270px;
+      }
+      .badge-float {
+        animation: floatBadge 4s ease-in-out infinite alternate;
+      }
+      .badge-float-rev {
+        animation: floatBadgeRev 4.5s ease-in-out infinite alternate;
+      }
+
+      @keyframes rotateGlow {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      @keyframes waveFlow {
+        0% { stroke-dashoffset: 0; opacity: 0.3; }
+        50% { opacity: 0.6; }
+        100% { stroke-dashoffset: 120; opacity: 0.3; }
+      }
+      @keyframes pulseScale {
+        0%, 100% { r: 5px; opacity: 0.6; }
+        50% { r: 9px; opacity: 1; }
+      }
+      @keyframes floatBadge {
+        0% { transform: translateY(0px); }
+        100% { transform: translateY(-7px); }
+      }
+      @keyframes floatBadgeRev {
+        0% { transform: translateY(0px); }
+        100% { transform: translateY(7px); }
+      }
+    </style>
+  </defs>
+
+  <!-- Deep Background Layer -->
+  <rect width="100%" height="100%" fill="url(#bgGrad)" />
+  <rect width="100%" height="100%" fill="url(#grid)" />
+
+  <!-- Dynamic Rotating Ambient Aura (Underneath Everything) -->
+  <g class="glow-orbit" opacity="0.35">
+    <circle cx="420" cy="110" r="140" fill="#38bdf8" filter="blur(70px)" />
+    <circle cx="780" cy="230" r="160" fill="#818cf8" filter="blur(80px)" />
+    <circle cx="600" cy="90" r="120" fill="#c084fc" filter="blur(65px)" />
+  </g>
+
+  <!-- Flow Data Lines / Circuits (Background Ambient Dynamics) -->
+  <path d="M 0 280 Q 300 240, 600 280 T 1200 280" fill="none" stroke="url(#primaryGrad)" stroke-width="2" stroke-dasharray="10 8" class="wave-flow" />
+  <path d="M 0 260 Q 350 300, 600 250 T 1200 270" fill="none" stroke="rgba(56, 189, 248, 0.25)" stroke-width="1.5" stroke-dasharray="6 6" />
+
+  <!-- Animated Pulse Nodes on Baseline -->
+  <circle cx="220" cy="270" r="6" fill="#38bdf8" class="node-pulse-1" />
+  <circle cx="600" cy="275" r="5" fill="#818cf8" />
+  <circle cx="980" cy="270" r="6" fill="#c084fc" class="node-pulse-2" />
+
+  <!-- Left Floating Pill: Real-time Metering -->
+  <g class="badge-float" transform="translate(60, 45)">
+    <rect width="210" height="42" rx="21" fill="url(#cardGrad)" stroke="rgba(56, 189, 248, 0.4)" stroke-width="1.2" />
+    <circle cx="24" cy="21" r="6" fill="#34d399" />
+    <text x="40" y="26" fill="#e2e8f0" font-size="13" font-weight="600" letter-spacing="0.4">⚡ Real-Time Metering</text>
+  </g>
+
+  <!-- Right Floating Pill: Credit Wallets -->
+  <g class="badge-float-rev" transform="translate(930, 45)">
+    <rect width="210" height="42" rx="21" fill="url(#cardGrad)" stroke="rgba(192, 132, 252, 0.4)" stroke-width="1.2" />
+    <circle cx="24" cy="21" r="6" fill="#818cf8" />
+    <text x="40" y="26" fill="#e2e8f0" font-size="13" font-weight="600" letter-spacing="0.4">💳 Credit Wallets &amp; Ledger</text>
+  </g>
+
+  <!-- Bottom Floating Pill: Usage-Based Invoicing -->
+  <g class="badge-float" transform="translate(485, 275)">
+    <rect width="230" height="38" rx="19" fill="url(#cardGrad)" stroke="rgba(129, 140, 248, 0.4)" stroke-width="1.2" />
+    <circle cx="22" cy="19" r="5" fill="#38bdf8" />
+    <text x="36" y="24" fill="#cbd5e1" font-size="12" font-weight="600">📊 Automated Invoicing</text>
+  </g>
+
+  <!-- Central Foreground Content (Unobscured & Crystal Clear) -->
+  <g text-anchor="middle" transform="translate(600, 115)">
+    <!-- Category Badge -->
+    <rect x="-140" y="-30" width="280" height="28" rx="14" fill="rgba(56, 189, 248, 0.12)" stroke="rgba(56, 189, 248, 0.3)" stroke-width="1" />
+    <text x="0" y="-12" fill="#38bdf8" font-size="11" font-weight="700" letter-spacing="2">CURATED AWESOME ECOSYSTEM</text>
+
+    <!-- Main Title -->
+    <text x="0" y="42" fill="#ffffff" font-size="38" font-weight="800" letter-spacing="-0.5">
+      Awesome SaaS Billing &amp; Credit Management
+    </text>
+
+    <!-- Subtitle with Gradient Fill -->
+    <text x="0" y="82" fill="url(#primaryGrad)" font-size="18" font-weight="600" letter-spacing="0.2">
+      Usage-Based Metering • Credit Wallets • Subscription Engines • Open-Source Ledgers
+    </text>
+
+    <!-- Description / SEO Tags Line -->
+    <text x="0" y="115" fill="#94a3b8" font-size="14" font-weight="400">
+      The authoritative guide to commercial billing platforms &amp; self-hosted monetization stacks
+    </text>
+  </g>
+</svg>
