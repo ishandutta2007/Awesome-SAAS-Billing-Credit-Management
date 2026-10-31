@@ -57,11 +57,11 @@ The table below catalogs leading commercial platforms for SaaS billing, subscrip
 
 ## 💻 Open-Source Billing & Credit Engines
 
-Self-hostable, developer-friendly frameworks and services for meter ingestion, prepaid credit balances, subscription billing, and automated invoicing. Repositories are **sorted descending by GitHub star count**.
+Self-hostable, developer-friendly frameworks and services for meter ingestion, prepaid credit balances, subscription billing, and automated invoicing. Repositories are **sorted descending by GitHub Stars_Count**.
 
 ### 🌟 Top Open-Source Projects by Stars
 
-| Repository 📦 | GitHub Stars 🌟 | License 📄 | Architecture & Stack 🛠️ | Core Strengths 💡 |
+| Repository 📦 | GitHub_Stars 🌟 | License 📄 | Architecture & Stack 🛠️ | Core Strengths 💡 |
 | :--- | :--- | :--- | :--- | :--- |
 | **[Lago](https://github.com/getlago/lago)** | [![Stars](https://img.shields.io/github/stars/getlago/lago?style=social&color=white)](https://github.com/getlago/lago/stargazers) | AGPL-3.0 | Ruby on Rails, Go, PostgreSQL, Redis | Open-source Stripe Billing alternative for event-based metering, hybrid subscription pricing, and automated invoice delivery. |
 | **[Invoice Ninja](https://github.com/invoiceninja/invoiceninja)** | [![Stars](https://img.shields.io/github/stars/invoiceninja/invoiceninja?style=social&color=white)](https://github.com/invoiceninja/invoiceninja/stargazers) | Elastic-2.0 | PHP (Laravel), Flutter, MySQL/PostgreSQL | Comprehensive self-hosted invoicing, recurring subscription billing, client management portal, and support for 50+ payment gateways. |
