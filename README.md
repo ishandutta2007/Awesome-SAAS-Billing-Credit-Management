@@ -4,10 +4,12 @@
 
 # 💳 Awesome SaaS Billing & Credit Management 🚀
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+<a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+[![Awesome](https://awesome.re/badge.svg)](https://github.com/ishandutta2007/Awesome-Awesome-Awesome)
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/ishandutta2007/Awesome-SAAS-Billing-Credit-Management/pulls)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/ishandutta2007/Awesome-SAAS-Billing-Credit-Management/graphs/commit-activity)
+<a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 
 > A curated list of production-grade **SaaS Billing**, **Usage-Based Metering**, **Credit Wallets**, and **Open-Source Billing Engines** for modern software, cloud services, and AI APIs.
 
@@ -22,6 +24,8 @@
   - [Credit Ledger & Developer SDKs](#-credit-ledger--developer-sdks)
   - [Self-Hosted Invoicing & Accounting](#-self-hosted-invoicing--accounting)
 - [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support & Sponsorship](#-support--sponsorship)
+- [⭐ Star History](#-star-history)
 - [⚠️ Disclaimer](#️-disclaimer)
 
 ---
@@ -112,6 +116,24 @@ We welcome additions, corrections, and improvements from billing engineers and f
 2. 🌿 Create a descriptive feature branch (`git checkout -b add-my-billing-engine`).
 3. 📝 Add your tool or library adhering to the tabular format (include starting tier pricing, free tier limits, and verifiable data).
 4. 🚀 Open a Pull Request detailing the changes and links to official documentation.
+
+---
+
+## 💖 Support & Sponsorship
+
+Thank you so much for exploring and using this repository! Maintaining and curating production-ready resources takes dedicated effort and continuous research.
+
+If you find this ecosystem guide helpful:
+- ⭐ **Star** this repository on GitHub to show your appreciation and help others find it.
+- 🍴 **Fork** it to build your own customization or contribute improvements back.
+- 📢 **Share** it with fellow billing architects, SaaS founders, and engineers.
+- ☕ **Buy me a coffee / Sponsor**: If you'd like to support ongoing updates and open-source tooling curation, you can sponsor through the **[GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007)**!
+
+---
+
+## ⭐ Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-SAAS-Billing-Credit-Management&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-SAAS-Billing-Credit-Management&type=date&legend=top-left)
 
 ---
 
